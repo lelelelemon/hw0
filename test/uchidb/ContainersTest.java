@@ -69,6 +69,21 @@ public class ContainersTest {
 	}
 
 	@Test
+	public void testEmptyMapCreation() {
+		Map<String, Integer> myMap = cont.initEmptyMap();
+		assertTrue("empty Map", myMap.size() == 0);
+	}
+
+	@Test
+	public void testMapCreation() {
+		Map<String, Integer> myMap = cont.initEmptyMap();
+
+		cont.storeMap(myMap);
+
+		assertTrue("map exists", cont.getValueFromMap("hello", 1) == 1);
+	}
+
+	@Test
 	public void testMapFunctionality() {
 		Map<String, Integer> myMap = cont.initEmptyMap();
 

@@ -9,7 +9,7 @@ import java.util.Set;
 
 public class MapContainers<T, S> implements Containers<T, S> {
 
-	Map<S, T> map;
+	private Map<S, T> map;
 
 	@Override
 
