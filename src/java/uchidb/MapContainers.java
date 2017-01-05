@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class Containers1<T, S> implements Containers<T, S> {
+public class MapContainers<T, S> implements Containers<T, S> {
 
 	Map<S, T> map;
 
@@ -72,7 +72,7 @@ public class Containers1<T, S> implements Containers<T, S> {
 		return defaultValue;
 	}
 
-	public boolean equals(Containers1<T, S> other) {
+	public boolean equals(MapContainers<T, S> other) {
 		boolean result = false;
 		if (map.equals(other.map))
 			result = true;
