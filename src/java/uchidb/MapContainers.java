@@ -72,12 +72,4 @@ public class MapContainers<T, S> implements Containers<T, S> {
 		return defaultValue;
 	}
 
-	public boolean equals(MapContainers<T, S> other) {
-		boolean result = false;
-		if (map.equals(other.map))
-			result = true;
-		return result;
-	} // end
-		// equals
-
 }
